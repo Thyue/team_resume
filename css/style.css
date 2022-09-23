@@ -1,0 +1,290 @@
+@font-face {
+    font-family: setofont;
+    src: url(src/font/setofont.ttf)
+}
+
+img {
+    width: 100%;
+}
+
+.opening {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1469FF
+}
+
+.star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10
+}
+
+.star .starTop {
+    width: 350px;
+    border-top: 135px solid #FF3C82;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    position: relative
+}
+
+.star .starTop:before {
+    content: '';
+    position: absolute;
+    top: -195px;
+    left: calc(50% - 40px);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 60px solid #FF3C82
+}
+
+.star .starBottom {
+    width: 350px;
+    border-top: 135px solid #FF3C82;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    position: relative;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.star .starBottom:before {
+    content: '';
+    position: absolute;
+    top: -195px;
+    left: calc(50% - 40px);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 60px solid #FF3C82
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    z-index: 9;
+    border-radius: 50%;
+    background: #0027C8
+}
+
+.square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    z-index: 8;
+    background: black
+}
+
+.textBlock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    text-align: center
+}
+
+.textBlock .textBlockTitle {
+    font-weight: 700;
+    font-size: 64px
+}
+
+.textBlock .textBlockDesc {
+    font-size: 24px;
+    margin-top: 20px
+}
+
+@media screen and (max-width: 600px) {
+    .star {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 10
+    }
+
+    .star .starTop {
+        width: 250px;
+        border-top: 80px solid #FF3C82;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        position: relative
+    }
+
+    .star .starTop:before {
+        content: '';
+        position: absolute;
+        top: -140px;
+        left: calc(50% - 40px);
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 60px solid #FF3C82
+    }
+
+    .star .starBottom {
+        width: 250px;
+        border-top: 80px solid #FF3C82;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        position: relative;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+
+    .star .starBottom:before {
+        content: '';
+        position: absolute;
+        top: -140px;
+        left: calc(50% - 40px);
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 60px solid #FF3C82
+    }
+
+    .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 300px;
+        z-index: 9;
+        border-radius: 50%;
+        background: #0027C8
+    }
+
+    .square {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 250px;
+        height: 250px;
+        z-index: 8;
+        background: black
+    }
+
+    .textBlock {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 20;
+        text-align: center
+    }
+
+    .textBlock .textBlockTitle {
+        font-weight: 700;
+        font-size: 40px
+    }
+
+    .textBlock .textBlockDesc {
+        font-size: 20px;
+        margin-top: 20px
+    }
+}
+
+html,
+body {
+    font-family: Microsoft JhengHei
+}
+
+html .selfPage,
+body .selfPage {
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: #f2f2f2
+}
+
+html .selfPage .selfLink,
+body .selfPage .selfLink {
+    padding-bottom: 10px
+}
+
+html img,
+body img {
+    width: 100%
+}
+
+@media screen and (min-width: 600px) {
+    .skillBoardTop {
+        padding-top: 10px;
+        border-top: 5px solid gray
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        padding-left: 200px;
+        padding-right: 200px
+    }
+}
+
+.skillCard {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.expBullet::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    display: block;
+    background-color: #979797;
+    margin-left: 4.5px;
+    top: 10px;
+    z-index: 0;
+    position: absolute
+}
+
+.expBullet::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin-top: 10px;
+    margin-left: 0.5px;
+    z-index: 1
+}
+
+.expBullet1::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin-top: 10px;
+    margin-left: 0.5px;
+    z-index: 1
+}
+
+.aboutPicture {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+footer p {
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: setofont
+}
